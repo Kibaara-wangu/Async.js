@@ -94,11 +94,7 @@ function performTask() {
 //   2. Returns a Promise that:
 //   Resolves immediately with a success message if a randomly generated number is greater than failureProbability.
 //   Rejects immediately with a failure message if a randomly generated number is less than or equal to failureProbability.
-//   Write another function executeWithRetry that:
-  
-//   Accepts a taskName, retries, and failureProbability.
-//   Uses a retry mechanism to attempt the unstableTask up to retries times.
-//   Logs whether the task succeeded or failed after all attempts.
+//   Write another funct
 function unstableTask(taskName, failureProbability) {
     return new Promise((resolve, reject) => {
     const randomValue = Math.random();
